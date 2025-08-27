@@ -234,6 +234,14 @@ body {
     text-overflow: ellipsis;
 }
 
+@media (max-width: 768px) {
+    .experience-description {
+        white-space: normal;
+        line-height: 1.4;
+        font-size: 13px;
+    }
+}
+
 /* Footer */
 .footer {
     display: flex;
