@@ -13,7 +13,18 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 400;
+    /* Accessibility improvements */
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
 }
+
+/* Accessibility focus styles */
+*:focus {
+    outline: 2px solid #007aff;
+    outline-offset: 2px;
+}
+
+
 
 .container {
     max-width: 1200px;
@@ -133,6 +144,11 @@ body {
     align-items: flex-start;
 }
 
+.about-text {
+    flex: 1;
+    max-width: 500px;
+}
+
 .about-text p {
     font-size: 18px;
     color: #1d1d1f;
@@ -140,6 +156,8 @@ body {
     max-width: 500px;
     line-height: 1.6;
 }
+
+
 
 .about-photo {
     flex-shrink: 0;
@@ -204,6 +222,13 @@ body {
     font-weight: 400;
     margin: 0;
     line-height: 1.4;
+}
+
+.experience-description {
+    font-size: 14px;
+    color: #1d1d1f;
+    margin: 0 0 6px 0;
+    line-height: 1.5;
 }
 
 /* Footer */
